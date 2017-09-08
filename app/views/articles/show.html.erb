@@ -1,0 +1,6 @@
+<h2 align="center">Title: <%= @article.title %></h2>
+<h2 align="center">Author: <%= @article.user.username %></h2>
+<h2><%= @article.comments.count %> comments</h2>
+<%= render @article.comments %>
+<h3>Add a comment</h3>
+<%= render 'comments/form' %>

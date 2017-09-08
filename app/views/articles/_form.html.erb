@@ -1,0 +1,10 @@
+<h1>Create</h1>
+<%= form_for @article do |a| %>
+  <%= a.label :title %>
+  <%= a.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
+  <%= a.label :description %>
+  <%= a.text_field :description %>
+  <%= a.label :photo %>
+  <%= a.text_field :photo %>
+  <%= a.submit %>
+<% end %>
